@@ -39,7 +39,7 @@ app.use("*",(req,res,next)=> {
 })
 
 //routes
-app.get('/',,indexController)
+app.get('/',indexController)
 app.get('/login',redirectIfAuth,loginController)
 app.get('/register',redirectIfAuth,registerController)
 app.post('/user/register',redirectIfAuth, storeUser)
