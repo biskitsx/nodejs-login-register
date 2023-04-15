@@ -5,6 +5,9 @@ module.exports = (req,res,next) => {
         if (!user) {
             res.redirect('/')
         }
-        else {}
-    })
+        console.log('User logged in successfully');
+        next()
+    }).catch(err=>{
+        console.log(err);
+    }) 
 }
